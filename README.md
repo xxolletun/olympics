@@ -278,3 +278,21 @@ méthodes pour s’assurer que le code suit toujours ces bonnes pratiques.
 
 Si vous avez des réponses à écrire, des remarques à faire sur votre travail,
 ajoutez-les à la fin de ce fichier.
+
+Réponses : 
+
+7. À quoi sert le paramètre « file » ? Comment cette technique s’appelle-t-elle ?
+Etant donné que le fichier cli.py importe les résultats dans le terminal, c'est ce code qui affiche les tableaux grace à rich. Et donc, 'file' est un paramètre qui controle les sorties. C'est de la redirection de flux/sortie. Pour pouvoir afficher les tableaux, on creer file en parametre (file=none) de fonction pour y changer la direction dans le code.
+
+8. À quoi sert le commentaire « pragma: no cover » ? Grâce à votre expérience acquise avec la question précédente, utilisez la même technique pour améliorer l’efficacité de vos tests.
+Ce commentaire donne l'instruction de ne pas compter la ligne concernée lors du coverage. Il faut le paramétrer dans le pyproject.toml .
+
+9. Vous devez avoir une couverture de 100%. Est-ce suffisant pour que l’ensemble du code fonctionne parfaitement ? Quels autres types de tests pourraient être idéalement réalisés ? (Ne les écrivez pas, décrivez-les simplement.)
+Des tests de rapidité, ou des tests qui donne des paramètres aléatoires (le top(1 à 10), les id() etc.)
+
+10. Pourquoi vous a-t-il été demandé d’écrire les tests dans cet ordre-là ? À quoi cela sert-il de regrouper une correction de bug et un test de non-régression dans un commit commun, ne comprenant que cela ?
+Je pense que c'était pour utiliser un modèle d'organisation : modèles de développement en cascade ou en V.
+
+Remarques :
+
+Le 100% était compliqué! Le 8. m'a fait comprendre que c'était ce qu'il fallait faire pour les 100% mais bon, je ne suis pas sure...
