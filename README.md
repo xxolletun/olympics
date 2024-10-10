@@ -295,4 +295,4 @@ Je pense que c'était pour utiliser un modèle d'organisation : modèles de dév
 
 Remarques :
 
-Le 100% était compliqué! Le 8. m'a fait comprendre que c'était ce qu'il fallait faire pour les 100% mais bon, je ne suis pas sure...
+Le 100% était compliqué! 

@@ -20,37 +20,37 @@ def test_countries():
     main(argv)
 
 
-# # Testing when command is missing
+# Testing when command is missing
 
-# def test_args_missing():
-#     argv = []
-#     with pytest.raises(SystemExit) as sysexit:
-#         main(argv)
-#     assert sysexit.value.code == 2
-
-
-# # Testing wrong command (not among the choices)
-
-# def test_main_wrong_argscommand():
-#     argv = ['athletes']
-#     try:
-#         main(argv)
-#     except SystemExit as sysexi:
-#         assert sysexi.code == 2
+def test_args_missing():
+    argv = []
+    with pytest.raises(SystemExit) as sysexit:
+        main(argv)
+    assert sysexit.value.code == 2
 
 
-# # Testing wrong type command (int or not str)
+# Testing wrong command (not among the choices)
 
-# def test_collective_not_string():
-#     try:
-#         argv = [collective]
-#     except NameError as nm:
-#         print(f"Erreur : {nm}")
+def test_main_wrong_argscommand():
+    argv = ['athletes']
+    try:
+        main(argv)
+    except SystemExit as sysexi:
+        assert sysexi.code == 2
 
-# def test_argument_int():
-#     argv = [123]
-#     with pytest.raises(TypeError) as te:
-#         main(argv)
+
+# Testing wrong type command (int or not str)
+
+def test_collective_not_string():
+    try:
+        argv = [collective]
+    except NameError as nm:
+        print(f"Erreur : {nm}")
+
+def test_argument_int():
+    argv = [123]
+    with pytest.raises(TypeError) as te:
+        main(argv)
 
 
 
