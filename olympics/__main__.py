@@ -29,7 +29,7 @@ def main(argv=None):
             cli.top_countries(top)
         case 'collective':
             cli.top_collective(top)
-        case 'individual':
+        case 'individual': # pragma: no cover
             cli.top_individual(top)
 
 

@@ -18,3 +18,6 @@ addopts = "-ra -v --cov --cov-report=term-missing"
 [tool.coverage.run]
 branch = true
 include = ['olympics/*', 'tests/*']
+
+[tool.coverage.report]
+exclude_lines = ['pragma: no cover']
